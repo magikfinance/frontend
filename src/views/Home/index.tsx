@@ -51,7 +51,7 @@ const Home: React.FC = () => {
 // guts
   return (
     <>
-      <PageMeta />
+      <PageMeta /> 
       <StyledHeroSection
         innerProps={{ style: { margin: '0', width: '100%' } }}
         background={
@@ -61,13 +61,14 @@ const Home: React.FC = () => {
         }
         index={2}
         hasCurvedDivider={false}
-      >
+      > {/*
         {account && (
           <UserBannerWrapper>
             <UserBanner />
           </UserBannerWrapper>
         )}
-        <MultipleBanner />
+        <MultipleBanner /> */}
+    
         <Hero />
       </StyledHeroSection>
       <PageSection // used by millions trusted by billions 
