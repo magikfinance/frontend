@@ -35,7 +35,7 @@ const Stats = () => {
 
   return (
     <Flex justifyContent="center" alignItems="center" flexDirection="column">
-      <GradientLogo height="48px" width="48px" mb="24px" />
+      <GradientLogo height="48px" width="48px" mb="24px" /> {/* pancake bunny in grad */}
       <Heading textAlign="center" scale="xl">
         {t('Used by millions.')}
       </Heading>

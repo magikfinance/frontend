@@ -48,7 +48,7 @@ const Home: React.FC = () => {
   const HomeSectionContainerStyles = { margin: '0', width: '100%', maxWidth: '968px' }
 
   const { t } = useTranslation()
-
+// guts
   return (
     <>
       <PageMeta />
@@ -70,11 +70,11 @@ const Home: React.FC = () => {
         <MultipleBanner />
         <Hero />
       </StyledHeroSection>
-      <PageSection
+      <PageSection // used by millions trusted by billions 
         innerProps={{ style: { margin: '0', width: '100%' } }}
         background={
           theme.isDark
-            ? 'linear-gradient(180deg, #09070C 22%, #201335 100%)'
+            ? 'linear-gradient(180deg, #000000 0%, #201335 40%, #5517a2 80%)'
             : 'linear-gradient(180deg, #FFFFFF 22%, #D7CAEC 100%)'
         }
         index={2}
@@ -82,26 +82,37 @@ const Home: React.FC = () => {
       >
         <MetricsSection />
       </PageSection>
-      <PageSection
+      <PageSection // swap tokens with ease 
         innerProps={{ style: HomeSectionContainerStyles }}
-        background={theme.colors.background}
+     //   background={theme.colors.background}
+          background={
+            theme.isDark
+              ? 'linear-gradient(180deg, #5517a2 0%, #201335 40%, #000000 80%)'
+              : 'linear-gradient(180deg, #FFFFFF 22%, #D7CAEC 100%)'
+          }
         index={2}
         hasCurvedDivider={false}
-      >
+      > {/* literal wedge color 
         <OuterWedgeWrapper>
           <InnerWedgeWrapper top fill={theme.isDark ? '#201335' : '#D8CBED'}>
             <WedgeTopLeft />
           </InnerWedgeWrapper>
-        </OuterWedgeWrapper>
+      </OuterWedgeWrapper> */}
         <SalesSection {...swapSectionData(t)} />
       </PageSection>
       <PageSection
+      // "earn passive income with your crypto" 
         innerProps={{ style: HomeSectionContainerStyles }}
-        background={theme.colors.gradients.cardHeader}
+      //  background={theme.colors.gradients.cardHeader}
+      background={
+        theme.isDark
+          ? 'linear-gradient(180deg, #000000 0%, #201335 40%, #5517a2 80%)'
+          : 'linear-gradient(180deg, #FFFFFF 22%, #D7CAEC 100%)'
+      }
         index={2}
         hasCurvedDivider={false}
-      >
-        <OuterWedgeWrapper>
+      > 
+        <OuterWedgeWrapper> 
           <InnerWedgeWrapper width="150%" top fill={theme.colors.background}>
             <WedgeTopRight />
           </InnerWedgeWrapper>
@@ -109,6 +120,7 @@ const Home: React.FC = () => {
         <SalesSection {...earnSectionData(t)} />
         <FarmsPoolsRow />
       </PageSection>
+      {/*
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={
@@ -119,25 +131,27 @@ const Home: React.FC = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        <WinSection />
-      </PageSection>
+
+      <WinSection /> 
+      </PageSection> */}
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
-        background={theme.colors.background}
+        background="linear-gradient(180deg, #5517a2 0%, #201335 40%, #000000 80%)"
         index={2}
         hasCurvedDivider={false}
       >
         <SalesSection {...cakeSectionData(t)} />
         <CakeDataRow />
       </PageSection>
-      <PageSection
+      {/*
+      <PageSection // little color wedge 
         innerProps={{ style: HomeSectionContainerStyles }}
-        background="linear-gradient(180deg, #7645D9 0%, #5121B1 100%)"
+        background="linear-gradient(180deg, #5517a2 0%, #201335 40%, #000000 80%)"
         index={2}
         hasCurvedDivider={false}
       >
-        <Footer />
-      </PageSection>
+       <Footer /> 
+    </PageSection> */}
     </>
   )
 }

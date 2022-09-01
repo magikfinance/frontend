@@ -36,14 +36,14 @@ const SalesSection: React.FC<SalesSectionProps> = (props) => {
           alignSelf={['flex-start', null, null, 'center']}
         >
           <ColoredWordHeading text={headingText} />
-          <Text color="textSubtle" mb="24px">
+          <Text color="textSubtle" mb="24px"> 
             {bodyText}
           </Text>
           <Flex>
-            <Button mr="16px">
+            <Button mr="16px" style={{ backgroundColor: 'black' }}>
               {primaryButton.external ? (
                 <Link external href={primaryButton.to}>
-                  <Text color="card" bold fontSize="16px">
+                  <Text color="#000000" bold fontSize="24px">
                     {primaryButton.text}
                   </Text>
                 </Link>
