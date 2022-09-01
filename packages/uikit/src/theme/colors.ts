@@ -54,7 +54,7 @@ export const darkColors: Colors = {
   secondary: "#9A6AFF",
   background: "#08060B",
   backgroundDisabled: "#3c3742",
-  backgroundAlt: "#27262c",
+  backgroundAlt: "#5517a2", // footer background 
   backgroundAlt2: "rgba(39, 38, 44, 0.7)",
   cardBorder: "#383241",
   contrast: "#FFFFFF",
@@ -70,8 +70,8 @@ export const darkColors: Colors = {
   textSubtle: "#B8ADD2",
   disabled: "#524B63",
   gradients: {
-    bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
-    inverseBubblegum: "linear-gradient(139.73deg, #3D2A54 0%, #313D5C 100%)",
+    bubblegum: "linear-gradient(41deg, rgba(19,23,64,1) 0%, rgba(41,30,82,1) 50%, rgba(140,63,162,1) 80%, rgba(168,60,140,1) 100%);",
+    inverseBubblegum: "linear-gradient(180deg, #000000 0%, #201335 40%, #5517a2 80%)",
     cardHeader: "linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)",
     blue: "linear-gradient(180deg, #00707F 0%, #19778C 100%)",
     violet: "linear-gradient(180deg, #6C4999 0%, #6D4DB2 100%)",
@@ -79,3 +79,4 @@ export const darkColors: Colors = {
     gold: "linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)",
   },
 };
+/// gradients used across site including swap gradient background 

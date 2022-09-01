@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 import { PancakeTheme } from '@pancakeswap/uikit'
+import cauldron from '../../public/images/New/cauldron.png'
 
 declare module 'styled-components' {
   /* eslint-disable @typescript-eslint/no-empty-interface */
@@ -12,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     background-color: ${({ theme }) => theme.colors.background};
+    
 
     img {
       height: auto;

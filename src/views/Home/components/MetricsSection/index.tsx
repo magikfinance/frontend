@@ -37,10 +37,10 @@ const Stats = () => {
     <Flex justifyContent="center" alignItems="center" flexDirection="column">
       <GradientLogo height="48px" width="48px" mb="24px" /> {/* pancake bunny in grad */}
       <Heading textAlign="center" scale="xl">
-        {t('Used by millions.')}
+        {t('Children of Winter Are')}
       </Heading>
       <Heading textAlign="center" scale="xl" mb="32px">
-        {t('Trusted with billions.')}
+        {t('Immune to the Cold.')}
       </Heading>
       <Text textAlign="center" color="textSubtle">
         {t('PancakeSwap has the most users of any decentralized platform, ever.')}

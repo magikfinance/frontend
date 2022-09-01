@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Flex } from "../Box";
-
+// styling for navigation footer magik
 const StyledBottomNav = styled(Flex)`
   position: fixed;
   bottom: 0px;

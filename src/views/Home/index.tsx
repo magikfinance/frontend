@@ -134,7 +134,7 @@ const Home: React.FC = () => {
       >
 
       <WinSection /> 
-      </PageSection> */}
+      </PageSection> 
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background="linear-gradient(180deg, #5517a2 0%, #201335 40%, #000000 80%)"

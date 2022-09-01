@@ -7,15 +7,15 @@ export const footerLinks: FooterLinkType[] = [
     label: "About",
     items: [
       {
-        label: "Contact",
+        label: "Documentation",
         href: "https://docs.pancakeswap.finance/contact-us",
       },
       {
-        label: "Blog",
+        label: "Magik Finance",
         href: "https://medium.com/pancakeswap",
       },
       {
-        label: "Community",
+        label: "Magik Farm",
         href: "https://docs.pancakeswap.finance/contact-us/telegram",
       },
       {
@@ -24,11 +24,6 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "—",
-      },
-      {
-        label: "Online Store",
-        href: "https://pancakeswap.creator-spring.com/",
-        isHighlighted: true,
       },
     ],
   },
@@ -80,8 +75,8 @@ export const socials = [
   {
     label: "Twitter",
     icon: TwitterIcon,
-    href: "https://twitter.com/pancakeswap",
-  },
+    href: "https://twitter.com/magikfinance",
+  }, /*
   {
     label: "Telegram",
     icon: TelegramIcon,
@@ -152,7 +147,7 @@ export const socials = [
     label: "Reddit",
     icon: RedditIcon,
     href: "https://reddit.com/r/pancakeswap",
-  },
+  }, */
   {
     label: "Instagram",
     icon: InstagramIcon,
@@ -167,11 +162,6 @@ export const socials = [
     label: "Discord",
     icon: DiscordIcon,
     href: "https://discord.gg/pancakeswap",
-  },
-  {
-    label: "Medium",
-    icon: MediumIcon,
-    href: "https://medium.com/pancakeswap",
   },
 ];
 

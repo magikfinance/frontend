@@ -2,7 +2,8 @@ import styled from 'styled-components'
 import { Box, Flex } from '@pancakeswap/uikit'
 import Footer from 'components/Menu/Footer'
 import { PageMeta } from 'components/Layout/Page'
-import { EXCHANGE_DOCS_URLS } from 'config/constants'
+import { EXCHANGE_DOCS_URLS } from 'config/constants'; 
+import cauldron from '../../public/images/New/cauldron.png'; 
 
 const StyledPage = styled.div<{ $removePadding: boolean; $noMinHeight }>`
   display: flex;
@@ -12,7 +13,7 @@ const StyledPage = styled.div<{ $removePadding: boolean; $noMinHeight }>`
   padding: ${({ $removePadding }) => ($removePadding ? '0' : '16px')};
   padding-bottom: 0;
   min-height: ${({ $noMinHeight }) => ($noMinHeight ? 'initial' : 'calc(100vh - 64px)')};
-  background: ${({ theme }) => theme.colors.gradients.bubblegum};
+  background: ${({ theme }) => theme.colors.gradients.inverseBubblegum};
 
   ${({ theme }) => theme.mediaQueries.xs} {
     background-size: auto;

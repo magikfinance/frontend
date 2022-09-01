@@ -109,10 +109,10 @@ const Hero = () => {
       >
         <Flex flex="1" flexDirection="column">
           <Heading scale="xxl" color="secondary" mb="24px">
-            {t('Swap. Farm.    MAGIK. ')}
+            {t('Swap. Games.    MAGIK. ')}
           </Heading>
           <Heading scale="md" mb="24px">
-            {t('Trade and earn with lightning speed on the FTM Network.')}
+            {t('A Full Suite of DeFi Tools and Community Gaming - Connected by the Power of MAGIK')}
           </Heading>
           <Flex>
             {!account && <ConnectWalletButton mr="8px" />}
