@@ -1547,7 +1547,7 @@ exports[`renders correctly 1`] = `
             class="c3"
           >
             <a
-              aria-label="Pancake home page"
+              aria-label="MagikSwap Homepage"
               class="c4"
               href="/"
             >
