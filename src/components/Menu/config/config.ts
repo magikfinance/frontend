@@ -45,22 +45,23 @@ const config: (
           label: t('Swap'),
           href: '/swap',
         },
+        /*
         {
           label: t('Limit'),
           href: '/limit-orders',
           supportChainIds: [ChainId.MAINNET],
-        },
+        },*/
         {
           label: t('Liquidity'),
           href: '/liquidity',
-        },
-        {
+        }, /*
+        { 
           label: t('Perpetual'),
           href: `https://perp.pancakeswap.finance/${perpLangMap(languageCode)}/futures/BTCUSDT?theme=${perpTheme(
             isDark,
           )}`,
           type: DropdownMenuItemType.EXTERNAL_LINK,
-        },
+        }, */
         // {
         //   label: t('Transfer'),
         //   href: '/transfer',
@@ -83,7 +84,9 @@ const config: (
           href: '/pools',
         },
       ],
-    },
+    }, 
+   
+    /*
     {
       label: t('Win'),
       href: '/prediction',
@@ -130,9 +133,9 @@ const config: (
           href: `${nftsBaseUrl}/activity`,
         },
       ],
-    },
+    },*/
     {
-      label: '',
+      label: 'More...',
       href: '/info',
       icon: MoreIcon,
       hideSubNav: true,
@@ -142,14 +145,7 @@ const config: (
           label: t('Info'),
           href: '/info',
         },
-        {
-          label: t('IFO'),
-          href: '/ifo',
-        },
-        {
-          label: t('Voting'),
-          href: '/voting',
-        },
+        
         {
           type: DropdownMenuItemType.DIVIDER,
         },
@@ -160,11 +156,7 @@ const config: (
         {
           type: DropdownMenuItemType.DIVIDER,
         },
-        {
-          label: t('Blog'),
-          href: 'https://medium.com/pancakeswap',
-          type: DropdownMenuItemType.EXTERNAL_LINK,
-        },
+        
         {
           label: t('Docs'),
           href: 'https://docs.pancakeswap.finance',
