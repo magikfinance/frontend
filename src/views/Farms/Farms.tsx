@@ -279,14 +279,14 @@ const Farms: React.FC = ({ children }) => {
         <Heading scale="lg" color="text">
           {t('Stake LP tokens to earn.')}
         </Heading>
-        <NextLinkFromReactRouter to="/farms/auction" prefetch={false}>
+       {/* <NextLinkFromReactRouter to="/farms/auction" prefetch={false}>
           <Button p="0" variant="text">
             <Text color="primary" bold fontSize="16px" mr="4px">
               {t('Community Auctions')}
             </Text>
             <ArrowForwardIcon color="primary" />
           </Button>
-        </NextLinkFromReactRouter>
+  </NextLinkFromReactRouter> */}
       </PageHeader>
       <Page>
         <ControlContainer>
@@ -297,7 +297,7 @@ const Farms: React.FC = ({ children }) => {
                 id="staked-only-farms"
                 checked={stakedOnly}
                 onChange={() => setStakedOnly(!stakedOnly)}
-                scale="sm"
+                scale="lg"
               />
               <Text> {t('Staked only')}</Text>
             </ToggleWrapper>
@@ -376,7 +376,7 @@ const Farms: React.FC = ({ children }) => {
           </Flex>
         )}
         <div ref={observerRef} />
-        <StyledImage src="/images/decorations/3dpan.png" alt="Pancake illustration" width={120} height={103} />
+        <StyledImage src="/images/New/magikdog.png" alt="Pancake illustration" width={120} height={103} />
       </Page>
     </FarmsContext.Provider>
   )
