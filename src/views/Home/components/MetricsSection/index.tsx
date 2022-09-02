@@ -18,7 +18,7 @@ const Stats = () => {
   const users = formatLocalisedCompactNumber(addressCount)
   const tvlString = tvl ? formatLocalisedCompactNumber(tvl) : '-'
 
-  const tvlText = t('And those users are now entrusting the platform with over $%tvl% in funds.', { tvl: tvlString })
+  const tvlText = t('Offering fast, easy swaps and liquidity pools for earning passive income, join  etc etc  $%tvl% in MagikSwap, join.', { tvl: tvlString })
   const [entrusting, inFunds] = tvlText.split(tvlString)
 
   const UsersCardData: IconCardData = {
@@ -36,15 +36,15 @@ const Stats = () => {
   return (
     <Flex justifyContent="center" alignItems="center" flexDirection="column">
       <GradientLogo height="48px" width="48px" mb="24px" /> {/* pancake bunny in grad */}
-      <Heading textAlign="center" scale="xl">
-        {t('Children of Winter Are')}
+      <Heading textAlign="center" scale="xxl">
+        {t('Children of Winter ')}
       </Heading>
       <Heading textAlign="center" scale="xl" mb="32px">
-        {t('Immune to the Cold.')}
+        {t('Are Immune to the Cold.')}
       </Heading>
-      <Text textAlign="center" color="textSubtle">
-        {t('PancakeSwap has the most users of any decentralized platform, ever.')}
-      </Text>
+      <Heading textAlign="center" color="white" scale="lg">
+        {t('MagikSwap is shelter from the cold winds of the bear market.')}
+      </Heading>
       <Flex flexWrap="wrap">
         <Text display="inline" textAlign="center" color="textSubtle" mb="20px">
           {entrusting}
@@ -54,9 +54,9 @@ const Stats = () => {
       </Flex>
 
       <Text textAlign="center" color="textSubtle" bold mb="32px">
-        {t('Will you join them?')}
+        {t('')}
       </Text>
-
+{/*
       <Flex flexDirection={['column', null, null, 'row']}>
         <IconCard {...UsersCardData} mr={[null, null, null, '16px']} mb={['16px', null, null, '0']}>
           <StatCardContent
@@ -78,8 +78,8 @@ const Stats = () => {
             bodyText={t('Total Value Locked')}
             highlightColor={theme.colors.failure}
           />
-        </IconCard>
-      </Flex>
+  </IconCard> 
+  </Flex>*/}
     </Flex>
   )
 }

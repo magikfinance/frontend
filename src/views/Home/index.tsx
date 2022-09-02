@@ -71,6 +71,7 @@ const Home: React.FC = () => {
     
         <Hero />
       </StyledHeroSection>
+      {/*
       <PageSection // used by millions trusted by billions 
         innerProps={{ style: { margin: '0', width: '100%' } }}
         background={
@@ -81,14 +82,14 @@ const Home: React.FC = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        <MetricsSection />
-      </PageSection>
+        
+      </PageSection> */}
       <PageSection // swap tokens with ease 
         innerProps={{ style: HomeSectionContainerStyles }}
      //   background={theme.colors.background}
           background={
             theme.isDark
-              ? 'linear-gradient(180deg, #5517a2 0%, #201335 40%, #000000 80%)'
+              ? 'linear-gradient(180deg, #000000 0%, #201335 40%, #5517a2 80%)'
               : 'linear-gradient(180deg, #FFFFFF 22%, #D7CAEC 100%)'
           }
         index={2}
@@ -99,8 +100,19 @@ const Home: React.FC = () => {
             <WedgeTopLeft />
           </InnerWedgeWrapper>
       </OuterWedgeWrapper> */}
-        <SalesSection {...swapSectionData(t)} />
+      <MetricsSection />
+      <SalesSection {...swapSectionData(t)} />
+   {/* earn passive income with your crypto*/}   <OuterWedgeWrapper> 
+          <InnerWedgeWrapper width="150%" top fill={theme.colors.background}>
+            <WedgeTopRight />
+          </InnerWedgeWrapper>
+        </OuterWedgeWrapper>
+        <SalesSection {...earnSectionData(t)} />
+ {/*       <FarmsPoolsRow /> */}
       </PageSection>
+
+{/*
+
       <PageSection
       // "earn passive income with your crypto" 
         innerProps={{ style: HomeSectionContainerStyles }}
@@ -113,15 +125,9 @@ const Home: React.FC = () => {
         index={2}
         hasCurvedDivider={false}
       > 
-        <OuterWedgeWrapper> 
-          <InnerWedgeWrapper width="150%" top fill={theme.colors.background}>
-            <WedgeTopRight />
-          </InnerWedgeWrapper>
-        </OuterWedgeWrapper>
-        <SalesSection {...earnSectionData(t)} />
-        <FarmsPoolsRow />
+        
       </PageSection>
-      {/*
+      
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={
