@@ -168,7 +168,7 @@ export default function RemoveLiquidity() {
       { name: 'verifyingContract', type: 'address' },
     ]
     const domain = {
-      name: 'Pancake LPs',
+      name: 'Magik LPs',
       version: '1',
       chainId,
       verifyingContract: pair.liquidityToken.address,
@@ -670,7 +670,7 @@ export default function RemoveLiquidity() {
                             currencyB === ETHER ? WNATIVE[chainId].address : currencyIdB
                           }`}
                         >
-                          {t('Receive WBNB')}
+                          {t('Receive WFTM')}
                         </StyledInternalLink>
                       ) : oneCurrencyIsWBNB ? (
                         <StyledInternalLink

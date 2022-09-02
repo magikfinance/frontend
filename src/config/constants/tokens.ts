@@ -2,7 +2,7 @@ import { ChainId, Token, WBNB } from '@magikswap/sdk'
 
 const CAKE_MAINNET = new Token(
   ChainId.MAINNET,
-  '0x5Cc61A78F164885776AA610fb0FE1257df78E59B',
+  '0x87a5C9B60A3aaf1064006FE64285018e50e0d020',
   18,
   'CAKE',
   'PancakeSwap Token',
