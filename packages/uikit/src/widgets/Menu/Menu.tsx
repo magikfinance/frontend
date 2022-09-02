@@ -19,7 +19,10 @@ const Wrapper = styled.div`
   position: relative;
   width: 100%;
 `;
-
+const NavBarDog = styled.img`
+  width: 140px; 
+  
+`
 const StyledNav = styled.nav`
   display: flex;
   justify-content: space-between;
@@ -131,8 +134,9 @@ const Menu: React.FC<NavProps> = ({
           {banner && <TopBannerContainer height={topBannerHeight}>{banner}</TopBannerContainer>}
           <StyledNav>
             <Flex>
-              <Logo isDark={isDark} href={homeLink?.href ?? "/"} />
-              {!isMobile && <MenuItems items={links} activeItem={activeItem} activeSubItem={activeSubItem} ml="24px" />}
+              <NavBarDog src={`/images/logowithtext.png`} />
+           {/*   <Logo isDark={isDark} href={homeLink?.href ?? "/"} />
+              {!isMobile && <MenuItems items={links} activeItem={activeItem} activeSubItem={activeSubItem} ml="24px" />} */}
             </Flex>
             <Flex alignItems="center" height="100%">
               {!isMobile && !isMd && (
