@@ -17,6 +17,30 @@
       "chainId": 250,
       "decimals": 18,
       "logoURI": "https://i.ibb.co/CKQ5yt8/piano.png"
+    },
+    {
+      "name": "Magik Share",
+      "symbol": "MSHARE",
+      "address": "0xC8Ca9026Ad0882133Ef126824F6852567c571A4E",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://i.ibb.co/5MTTjnX/MSHARE.png"
+    },
+    {
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "address": "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
+      "chainId": 250,
+      "decimals": 6,
+      "logoURI": "https://tokens.pancakeswap.finance/images/0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d.png"
+    },
+    {
+      "name": "Wrapped Fantom",
+      "symbol": "wFTM",
+      "address": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://github.com/Layer3Org/spiritswap-tokens-list-icon/blob/master/token-list/images/0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83.png?raw=true"
     }
   ]
 }
