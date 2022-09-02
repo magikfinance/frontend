@@ -65,7 +65,24 @@ import PriceChartContainer from './components/Chart/PriceChartContainer'
 import { StyledInputCurrencyWrapper, StyledSwapContainer } from './styles'
 import CurrencyInputHeader from './components/CurrencyInputHeader'
 import ImportTokenWarningModal from '../../components/ImportTokenWarningModal'
+import magikbackground from '../Home/components/Banners/images/cauldron.png'; 
 
+
+const BgWrapper = styled.div`
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+`
+
+const BackgroundImage = styled.img`
+body {
+  background-size: cover !important;
+  }
+`
 const Label = styled(Text)`
   font-size: 12px;
   font-weight: bold;
@@ -373,8 +390,8 @@ export default function Swap() {
 
   return (
     <Page removePadding={isChartExpanded} hideFooterOnDesktop={isChartExpanded}>
-      <Flex width="100%" justifyContent="center" position="relative">
-    {/*    {!isMobile && isChartSupported && (
+ {/*     <Flex width="100%" justifyContent="center" position="relative">
+        {!isMobile && isChartSupported && (
           <PriceChartContainer
             inputCurrencyId={inputCurrencyId}
             inputCurrency={currencies[Field.INPUT]}
@@ -404,8 +421,8 @@ export default function Swap() {
             isOpen={isChartDisplayed}
             setIsOpen={setIsChartDisplayed}
           />
-          )} */}
-        <Flex flexDirection="column">
+          )} 
+          <Flex flexDirection="column"> */}
           <StyledSwapContainer $isChartExpanded={isChartExpanded}>
             <StyledInputCurrencyWrapper mt={isChartExpanded ? '24px' : '0'}>
               <AppBody>
@@ -625,8 +642,6 @@ export default function Swap() {
               <Footer variant="side" helpUrl={EXCHANGE_DOCS_URLS} />
             </Box>
           )}
-        </Flex>
-      </Flex>
     </Page>
   )
 }

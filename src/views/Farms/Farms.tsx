@@ -25,7 +25,25 @@ import ToggleView from 'components/ToggleView/ToggleView'
 import Table from './components/FarmTable/FarmTable'
 import FarmTabButtons from './components/FarmTabButtons'
 import { FarmWithStakedValue } from './components/types'
+import {createGlobalStyle} from 'styled-components';
+import magikbackground from '../Home/components/Banners/images/cauldron.png'; 
 
+
+const BgWrapper = styled.div`
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+`
+
+const BackgroundImage = styled.img`
+body {
+  background-size: cover !important;
+  }
+`
 const ControlContainer = styled.div`
   display: flex;
   width: 100%;
@@ -273,13 +291,19 @@ const Farms: React.FC = ({ children }) => {
   return (
     <FarmsContext.Provider value={{ chosenFarmsMemoized }}>
       <PageHeader>
+        <h1 style={{ marginBottom: '24px', fontSize: '60px', color:'white', 
+        textAlign:'center', fontWeight:'600',  }}>
+          Farms </h1>
+        <h1 style={{ marginBottom: '12px', fontSize: '30px', color:'white', 
+        textAlign:'center', fontWeight:'700'}}>Stake LP tokens to earn </h1>
+{/*
         <Heading as="h1" scale="xxl" color="secondary" mb="24px">
           {t('Farms')}
-        </Heading>
+  </Heading> 
         <Heading scale="lg" color="text">
           {t('Stake LP tokens to earn.')}
         </Heading>
-       {/* <NextLinkFromReactRouter to="/farms/auction" prefetch={false}>
+        <NextLinkFromReactRouter to="/farms/auction" prefetch={false}>
           <Button p="0" variant="text">
             <Text color="primary" bold fontSize="16px" mr="4px">
               {t('Community Auctions')}
@@ -289,6 +313,9 @@ const Farms: React.FC = ({ children }) => {
   </NextLinkFromReactRouter> */}
       </PageHeader>
       <Page>
+        <BgWrapper>
+            <BackgroundImage src="/images/New/cauldron.png" alt="background"  />
+        </BgWrapper>
         <ControlContainer>
           <ViewControls>
             <ToggleView idPrefix="clickFarm" viewMode={viewMode} onToggle={setViewMode} />
