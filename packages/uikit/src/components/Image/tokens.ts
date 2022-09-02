@@ -2,6 +2,16 @@
  * @see https://github.com/pancakeswap/pancake-frontend/blob/develop/src/config/constants/tokens.ts
  */
 const tokens = {
+  magik: {
+    symbol: "MAGIK",
+    address: {
+      250: "0x87a5C9B60A3aaf1064006FE64285018e50e0d020",
+      56: "0x87a5C9B60A3aaf1064006FE64285018e50e0d020",
+      97: "0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe",
+    },
+    decimals: 18,
+    projectLink: "https://pancakeswap.finance/",
+  },
   cake: {
     symbol: "CAKE",
     address: {
