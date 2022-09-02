@@ -23,7 +23,10 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         label: '—',
       },
     ],
-  }, /*
+  },    
+
+          
+      /*               
   {
     label: t('Help'),
     items: [
@@ -65,5 +68,7 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         href: 'https://docs.pancakeswap.finance/hiring/become-a-chef',
       },
     ],
-  },*/ 
+  },
+  
+      */      
 ]

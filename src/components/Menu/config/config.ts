@@ -45,12 +45,12 @@ const config: (
           label: t('Swap'),
           href: '/swap',
         },
-        /*
+         /*
         {
           label: t('Limit'),
           href: '/limit-orders',
           supportChainIds: [ChainId.MAINNET],
-        },*/
+        }, */
         {
           label: t('Liquidity'),
           href: '/liquidity',
@@ -84,10 +84,11 @@ const config: (
           href: '/pools',
         },
       ],
-    }, 
+    },  
    
-    /*
-    {
+      
+       /*     
+   {
       label: t('Win'),
       href: '/prediction',
       icon: TrophyIcon,
@@ -133,7 +134,8 @@ const config: (
           href: `${nftsBaseUrl}/activity`,
         },
       ],
-    },*/
+    },    
+    */ 
     {
       label: 'More...',
       href: '/info',
