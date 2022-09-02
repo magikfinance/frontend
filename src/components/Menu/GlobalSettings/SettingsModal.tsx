@@ -118,7 +118,7 @@ const SettingsModal: React.FC<InjectedModalProps> = ({ onDismiss, mode }) => {
               </Flex>
               <TransactionSettings />
             </Flex>
-            <Flex justifyContent="space-between" alignItems="center" mb="24px">
+            {/* <Flex justifyContent="space-between" alignItems="center" mb="24px">
               <Flex alignItems="center">
                 <Text>{t('Zap (Beta)')}</Text>
                 <QuestionHelper
@@ -140,14 +140,14 @@ const SettingsModal: React.FC<InjectedModalProps> = ({ onDismiss, mode }) => {
                   ml="4px"
                 />
               </Flex>
-              <Toggle
+              {/* <Toggle
                 checked={zapMode}
                 scale="md"
                 onChange={() => {
                   toggleZapMode(!zapMode)
                 }}
-              />
-            </Flex>
+              /> */}
+            {/* </Flex> */}
             <Flex justifyContent="space-between" alignItems="center" mb="24px">
               <Flex alignItems="center">
                 <Text>{t('Expert Mode')}</Text>
