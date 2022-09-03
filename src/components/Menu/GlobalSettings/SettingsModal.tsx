@@ -79,7 +79,7 @@ const SettingsModal: React.FC<InjectedModalProps> = ({ onDismiss, mode }) => {
               <Text bold textTransform="uppercase" fontSize="18px" color="secondary" mb="24px">
                 {t('Global')}
               </Text>
-              <Flex justifyContent="space-between" mb="24px">
+          {/*    <Flex justifyContent="space-between" mb="24px">
                 <Text>{t('Dark mode')}</Text>
                 <ThemeSwitcher isDark={isDark} toggleTheme={() => setTheme(isDark ? 'light' : 'dark')} />
               </Flex>
@@ -103,6 +103,7 @@ const SettingsModal: React.FC<InjectedModalProps> = ({ onDismiss, mode }) => {
                   }}
                 />
               </Flex>
+                */}
               <GasSettings />
             </Flex>
           </>
@@ -148,7 +149,7 @@ const SettingsModal: React.FC<InjectedModalProps> = ({ onDismiss, mode }) => {
                 }}
               /> */}
             {/* </Flex> */}
-            <Flex justifyContent="space-between" alignItems="center" mb="24px">
+    {/*        <Flex justifyContent="space-between" alignItems="center" mb="24px">
               <Flex alignItems="center">
                 <Text>{t('Expert Mode')}</Text>
                 <QuestionHelper
@@ -189,6 +190,7 @@ const SettingsModal: React.FC<InjectedModalProps> = ({ onDismiss, mode }) => {
               </Flex>
               <PancakeToggle checked={audioPlay} onChange={toggleSetAudioMode} scale="md" />
             </Flex>
+              */}
           </>
         )}
       </ScrollableContainer>

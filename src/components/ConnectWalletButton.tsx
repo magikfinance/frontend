@@ -24,8 +24,8 @@ const ConnectWalletButton = ({ children, ...props }: ButtonProps) => {
     <Button onClick={handleClick} style={{ 
       backgroundColor: '#000000', 
       color: 'white', 
-      padding: '10px', borderRadius: '12px', width: '12vw', marginRight:'1%'}}>
-      {children || <Trans>Connect Wallet</Trans>}
+      padding: '6px', borderRadius: '12px', marginRight:'1%', marginLeft: '5%'}}>
+      {children || <Trans>CONNECT WALLET</Trans>}
     </Button>
   )
 }
