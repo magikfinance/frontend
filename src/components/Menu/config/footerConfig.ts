@@ -15,8 +15,8 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         href: 'https://magik.finance',
       },
       {
-        label: t('MagikFarm'),
-        href: 'https://medium.com/pancakeswap',
+        label: t('Links'),
+        href: 'https://linktr.ee/magikdotfinance',
       },
       
       {
