@@ -95,7 +95,7 @@ const Home: React.FC = () => {
           }
         index={2}
         hasCurvedDivider={false}  */}
-        >  {/*
+         {/*
         <OuterWedgeWrapper>
           <InnerWedgeWrapper top fill={theme.isDark ? '#201335' : '#D8CBED'}>
             <WedgeTopLeft />
