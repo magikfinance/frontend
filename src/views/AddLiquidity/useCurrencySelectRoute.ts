@@ -30,7 +30,7 @@ export const useCurrencySelectRoute = () => {
           router.replace(`/add/${newCurrencyIdB}`, undefined, { shallow: true })
         }
       } else {
-        router.replace(`/add/${currencyIdA || 'BNB'}/${newCurrencyIdB}`, undefined, { shallow: true })
+        router.replace(`/add/${currencyIdA || 'FTM'}/${newCurrencyIdB}`, undefined, { shallow: true })
       }
     },
     [currencyIdA, router, currencyIdB],

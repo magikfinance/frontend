@@ -81,7 +81,7 @@ export const UnitDisplay: React.FC = () => {
           value={cakeValue}
           currencyValue={cakeToUSD(cakeValue)}
           placeholder="0.0"
-          unit="CAKE"
+          unit="MAGIK"
         />
       </Box>
       {/* Long token names with spaces */}
@@ -91,7 +91,7 @@ export const UnitDisplay: React.FC = () => {
           value={cakeValue}
           currencyValue="2854.66 BADGER-HOTCROSS LP"
           placeholder="0.0"
-          unit="CAKE-BNB LP"
+          unit="MAGIK-FTM LP"
         />
       </Box>
     </>

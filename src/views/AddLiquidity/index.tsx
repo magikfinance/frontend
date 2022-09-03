@@ -74,7 +74,7 @@ export default function AddLiquidity() {
 
   const [zapMode] = useZapModeManager()
   const [temporarilyZapMode, setTemporarilyZapMode] = useState(true)
-  const [currencyIdA, currencyIdB] = router.query.currency || ['BNB', CAKE[chainId]?.address]
+  const [currencyIdA, currencyIdB] = router.query.currency || ['FTM', CAKE[chainId]?.address]
   const [steps, setSteps] = useState(Steps.Choose)
 
   const dispatch = useAppDispatch()
@@ -378,7 +378,7 @@ export default function AddLiquidity() {
       } and ${parsedAmounts[Field.CURRENCY_B]?.toSignificant(3)} ${currencies[Field.CURRENCY_B]?.symbol}`
       if (currencyA === ETHER || currencyB === ETHER) {
         const tokenBIsBNB = currencyB === ETHER
-        method = 'zapInBNBRebalancing'
+        method = 'zapInFTMRebalancing'
         args = [
           wrappedCurrency(currencies[tokenBIsBNB ? Field.CURRENCY_A : Field.CURRENCY_B], chainId).address, // token1
           parsedAmounts[tokenBIsBNB ? Field.CURRENCY_A : Field.CURRENCY_B].raw.toString(), // token1AmountIn
@@ -402,7 +402,7 @@ export default function AddLiquidity() {
         ]
       }
     } else if (currencies[zapIn.swapTokenField] === ETHER) {
-      method = 'zapInBNB'
+      method = 'zapInFTM'
       args = [pair.liquidityToken.address, minAmountOut]
       summary = `Zap in ${parsedAmounts[zapIn.swapTokenField]?.toSignificant(3)} BNB for ${getLPSymbol(
         pair.token0.symbol,

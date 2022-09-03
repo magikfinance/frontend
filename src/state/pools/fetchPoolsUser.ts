@@ -9,9 +9,9 @@ import uniq from 'lodash/uniq'
 import fromPairs from 'lodash/fromPairs'
 
 // Pool 0, Cake / Cake is a different kind of contract (master chef)
-// BNB pools use the native BNB token (wrapping ? unwrapping is done at the contract level)
-const nonBnbPools = poolsConfig.filter((pool) => pool.stakingToken.symbol !== 'BNB')
-const bnbPools = poolsConfig.filter((pool) => pool.stakingToken.symbol === 'BNB')
+// FTM pools use the native FTM token (wrapping ? unwrapping is done at the contract level)
+const nonBnbPools = poolsConfig.filter((pool) => pool.stakingToken.symbol !== 'FTM')
+const bnbPools = poolsConfig.filter((pool) => pool.stakingToken.symbol === 'FTM')
 const nonMasterPools = poolsConfig.filter((pool) => pool.sousId !== 0)
 
 export const fetchPoolsAllowance = async (account) => {
@@ -26,7 +26,7 @@ export const fetchPoolsAllowance = async (account) => {
 }
 
 export const fetchUserBalances = async (account) => {
-  // Non BNB pools
+  // Non FTM pools
   const tokens = uniq(nonBnbPools.map((pool) => pool.stakingToken.address))
   const calls = tokens.map((token) => ({
     address: token,
@@ -48,7 +48,7 @@ export const fetchUserBalances = async (account) => {
       .filter(Boolean),
   )
 
-  // BNB pools
+  // FTM pools
   const bnbBalanceJson = new BigNumber(bnbBalance.toString()).toJSON()
   const bnbBalances = fromPairs(bnbPools.map((pool) => [pool.sousId, bnbBalanceJson]))
 
