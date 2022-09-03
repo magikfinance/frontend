@@ -59,8 +59,8 @@ const PhishingWarningBanner: React.FC = () => {
           key={i}
           small
           as="span"
-          bold={text === 'https://pancakeswap.finance'}
-          color={text === 'https://pancakeswap.finance' ? '#FFFFFF' : '#BDC2C4'}
+          bold={text === 'https://magikswap.dog'}
+          color={text === 'https://magikswap.dog' ? '#FFFFFF' : '#BDC2C4'}
         >
           {text}
         </Text>
