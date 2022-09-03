@@ -78,7 +78,7 @@ function MyApp(props: AppProps) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="🥞 MagikSwap.Dog - A next evolution DeFi exchange on Fantom Opera Chain (FTM)"
+          content="🐶MagikSwap.Dog - A next evolution DeFi exchange on Fantom Opera Chain (FTM)"
         />
         <title>MagikSwap</title>
         {(Component as NextPageWithLayout).mp && (
