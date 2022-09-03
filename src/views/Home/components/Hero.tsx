@@ -6,7 +6,7 @@ import { useTranslation } from '@pancakeswap/localization'
 import useTheme from '../../../hooks/useTheme'; 
 import Image from 'next/image'
 import styled, { keyframes } from 'styled-components'
-import bunnyImage from '../../../../public/images/new/magikdog.png'
+import bunnyImage from '../../../../public/images/New/magikdog.png'
 import CompositeImage, { CompositeImageProps } from './CompositeImage'
 import { SlideSvgDark, SlideSvgLight } from './SlideSvg'
 
