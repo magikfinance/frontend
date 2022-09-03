@@ -45,7 +45,7 @@ const PhishingWarningBanner: React.FC = () => {
   const [, hideBanner] = usePhishingBannerManager()
   const { isMobile, isMd } = useMatchBreakpointsContext()
   const warningTextAsParts = useMemo(() => {
-    const warningText = t("There's only one MagikSwap. Make sure you're in the right place!  magikswap.finance ")
+    const warningText = t("There's only one MagikSwap. Make sure you're in the right place!  magikswap.dog ")
     return warningText.split(/(https:\/\/pancakeswap.finance)/g)
   }, [t])
   const warningTextComponent = (

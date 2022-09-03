@@ -61,12 +61,12 @@ export const links: MenuItemsType[] = [
         href: "/earn",
       },
       {
-        label: "Yield Farms",
-        href: "/farms",
+        label: "Farms",
+        href: "https://magik.finance/farms",
       },
       {
-        label: "Syrup pools",
-        href: "/pools",
+        label: "Pools",
+        href: "https://magik.farm/",
       },
     ],
   },

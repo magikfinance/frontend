@@ -77,11 +77,11 @@ const config: (
       items: [
         {
           label: t('Farms'),
-          href: '/farms',
+          href: 'https://magik.finance/farms',
         },
         {
-          label: t('Pools'),
-          href: '/pools',
+          label: t('Vault'),
+          href: 'https://magik.farm',
         },
       ],
     },  
@@ -143,7 +143,7 @@ const config: (
       hideSubNav: true,
       supportChainIds: [ChainId.MAINNET],
       items: [
-        {
+   /*     {
           label: t('Info'),
           href: '/info',
         },
@@ -158,10 +158,10 @@ const config: (
         {
           type: DropdownMenuItemType.DIVIDER,
         },
-        
+        */
         {
           label: t('Docs'),
-          href: 'https://docs.pancakeswap.finance',
+          href: 'https://https://magikdotfinance.gitbook.io/docs/',
           type: DropdownMenuItemType.EXTERNAL_LINK,
         },
       ],

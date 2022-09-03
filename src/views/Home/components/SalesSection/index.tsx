@@ -56,7 +56,7 @@ const SalesSection: React.FC<SalesSectionProps> = (props) => {
               )}
             </Button>
             {secondaryButton.external ? (
-              <Link external href={secondaryButton.to}>
+              <Link color="#ffffff" external href={secondaryButton.to}>
                 {secondaryButton.text}
               </Link>
             ) : (
