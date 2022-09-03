@@ -1,12 +1,12 @@
 import { Button, Flex, Heading } from '@pancakeswap/uikit'
 import { useWeb3React } from '@web3-react/core'
-import ConnectWalletButton from 'components/ConnectWalletButton'
+import ConnectWalletButton from '../../../components/ConnectWalletButton'
 import { NextLinkFromReactRouter } from 'components/NextLink'
 import { useTranslation } from '@pancakeswap/localization'
-import useTheme from 'hooks/useTheme'
+import useTheme from '../../../hooks/useTheme'; 
 import Image from 'next/image'
 import styled, { keyframes } from 'styled-components'
-import bunnyImage from '../../../../public/images/New/magikdog.png'
+import bunnyImage from '../../../../public/images/new/magikdog.png'
 import CompositeImage, { CompositeImageProps } from './CompositeImage'
 import { SlideSvgDark, SlideSvgLight } from './SlideSvg'
 
@@ -104,7 +104,7 @@ const Hero = () => {
         flexDirection={['column-reverse', null, null, 'row']}
         alignItems={['flex-end', null, null, 'center']}
         justifyContent="center"
-        mt={[account ? '280px' : '50px', null, 0]}
+        mt={[account ? '25px' : '25px', null, 0]}
         id="homepage-hero"
       >
         <Flex flex="1" flexDirection="column">
@@ -114,11 +114,12 @@ const Hero = () => {
           <Heading scale="md" mb="24px">
             {t('A Full Suite of DeFi Tools and Community Gaming - Connected by the Power of MAGIK')}
           </Heading>
-          <Flex>
-            {!account && <ConnectWalletButton mr="8px" />}
+          <Flex justifyContent="space-between" style={{maxWidth: '80%', width: '80%'}}>
+            {!account && <ConnectWalletButton  />}
             <NextLinkFromReactRouter to="/swap">
-              <Button style={{ backgroundColor: 'white', color: 'black', 
-            padding: '10px', borderRadius: '12px', width: '12vw' }} >{t('TRADE NOW')}</Button>
+              <Button 
+              style={{ backgroundColor: 'white', color: 'black', 
+            padding: '6px', borderRadius: '12px', marginRight: '4rem', width: '100%',    }} >{t('TRADE NOW')}</Button>
             </NextLinkFromReactRouter>
           </Flex>
         </Flex>
