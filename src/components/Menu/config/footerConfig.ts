@@ -7,7 +7,7 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
     items: [
       {
         label: t('Documentation'),
-        href: 'https://docs.pancakeswap.finance/contact-us',
+        href: 'https://magikdotfinance.gitbook.io/docs/',
         isHighlighted: true,
       },
       {
@@ -32,15 +32,15 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
     items: [
       {
         label: t('Customer Support'),
-        href: 'https://docs.pancakeswap.finance/contact-us/customer-support',
+        href: 'https://magikdotfinance.gitbook.io/docs//customer-support',
       },
       {
         label: t('Troubleshooting'),
-        href: 'https://docs.pancakeswap.finance/help/troubleshooting',
+        href: 'https://magikdotfinance.gitbook.io/docs/help/troubleshooting',
       },
       {
         label: t('Guides'),
-        href: 'https://docs.pancakeswap.finance/get-started',
+        href: 'https://magikdotfinance.gitbook.io/docs/get-started',
       },
     ],
   }, 
@@ -53,19 +53,19 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
       },
       {
         label: t('Documentation'),
-        href: 'https://docs.pancakeswap.finance',
+        href: 'https://https://magikdotfinance.gitbook.io/docs/',
       },
       {
         label: t('Bug Bounty'),
-        href: 'https://docs.pancakeswap.finance/code/bug-bounty',
+        href: 'https://magikdotfinance.gitbook.io/docs/code/bug-bounty',
       },
       {
         label: t('Audits'),
-        href: 'https://docs.pancakeswap.finance/help/faq#is-pancakeswap-safe-has-pancakeswap-been-audited',
+        href: 'https://magikdotfinance.gitbook.io/docs/help/faq#is-pancakeswap-safe-has-pancakeswap-been-audited',
       },
       {
         label: t('Careers'),
-        href: 'https://docs.pancakeswap.finance/hiring/become-a-chef',
+        href: 'https://magikdotfinance.gitbook.io/docs/hiring/become-a-chef',
       },
     ],
   },
