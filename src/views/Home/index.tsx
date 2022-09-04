@@ -54,8 +54,8 @@ const Home: React.FC = () => {
       <StyledHeroSection
         innerProps={{ style: { margin: '0', width: '100%' } }}
         background={
-          theme.isDark
-            ? 'radial-gradient(329.58% 50% at 50% 50%, #3B2864 0%, #191326 100%)'
+          'radial-gradient(329.58% 50% at 50% 50%, #3B2864 0%, #191326 100%)'
+
         }
         index={2}
         hasCurvedDivider={false}
