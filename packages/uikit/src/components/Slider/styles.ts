@@ -24,7 +24,7 @@ const bunnyButt = `"data:image/svg+xml,%3Csvg width='15' height='32' viewBox='0 
 
 const getBaseThumbStyles = ({ isMax, disabled }: StyledInputProps) => `
   -webkit-appearance: none;
-  background-image: url(${isMax ? bunnyHeadMax : bunnyHeadMain});
+  background-image: url(${isMax});
   background-color: transparent;
   box-shadow: none;
   border: 0;
@@ -66,7 +66,7 @@ export const BunnyButt = styled.div<DisabledProp>`
 export const BunnySlider = styled.div`
   position: absolute;
   left: 14px;
-  width: calc(100% - 14px);
+  width: calc(100% - 15px);
 `;
 
 export const StyledInput = styled.input<StyledInputProps>`
