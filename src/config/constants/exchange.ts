@@ -11,13 +11,6 @@ export const ROUTER_ADDRESS = {
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.MAINNET]: [
-    bscTokens.wbnb,
-    bscTokens.cake,
-    bscTokens.busd,
-    bscTokens.usdt,
-    bscTokens.btcb,
-    bscTokens.eth,
-    bscTokens.usdc,
   ],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
 }
@@ -41,21 +34,19 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
-  [ChainId.MAINNET]: [bscTokens.busd, bscTokens.cake, bscTokens.btcb],
+  [ChainId.MAINNET]: [],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
-  [ChainId.MAINNET]: [bscTokens.wbnb, bscTokens.dai, bscTokens.busd, bscTokens.usdt],
+  [ChainId.MAINNET]: [],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.MAINNET]: [
-    [bscTokens.cake, bscTokens.wbnb],
-    [bscTokens.busd, bscTokens.usdt],
-    [bscTokens.dai, bscTokens.usdt],
+
   ],
 }
 
@@ -85,9 +76,9 @@ export const BASE_FEE = new Percent(JSBI.BigInt(25), BIPS_BASE)
 export const INPUT_FRACTION_AFTER_FEE = ONE_HUNDRED_PERCENT.subtract(BASE_FEE)
 
 // BNB
-export const DEFAULT_INPUT_CURRENCY = 'BNB'
+export const DEFAULT_INPUT_CURRENCY = 'FTM'
 // CAKE
-export const DEFAULT_OUTPUT_CURRENCY = '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82'
+export const DEFAULT_OUTPUT_CURRENCY = '0x87a5C9B60A3aaf1064006FE64285018e50e0d020'
 
 // Handler string is passed to Gelato to use PCS router
 export const GELATO_HANDLER = 'pancakeswap'
