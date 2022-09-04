@@ -67,7 +67,7 @@ function MyApp(props: AppProps) {
         />
         <meta
           name="description"
-          content="Cheaper and faster than Uniswap? Discover PancakeSwap, the leading DEX on FTM with the best farms in DeFi and a lottery for MAGIK."
+          content="Cheaper and faster than Uniswap? Discover MagikSwap, the leading DEX on FTM with the best farms in DeFi and a lottery for MAGIK."
         />
         <meta name="theme-color" content="#1FC7D4" />
         <meta name="twitter:image" content="https://i.ibb.co/CKQ5yt8/piano.png" />
