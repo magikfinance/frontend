@@ -87,33 +87,22 @@ const config: (
     },  
    
       
-       /*     
+   
    {
-      label: t('Win'),
-      href: '/prediction',
+      label: t('Games'),
+      href: '/games',
       icon: TrophyIcon,
       fillIcon: TrophyFillIcon,
       supportChainIds: [ChainId.MAINNET],
       items: [
         {
-          label: t('Trading Competition'),
-          href: '/competition',
-          hideSubNav: true,
-        },
-        {
-          label: t('Prediction (BETA)'),
-          href: '/prediction',
-        },
-        {
-          label: t('Lottery'),
-          href: '/lottery',
-        },
-        {
-          label: t('Pottery (BETA)'),
-          href: '/pottery',
+          label: t('Magik World (BETA)'),
+          href: 'https://magikworld.net',
         },
       ],
     },
+
+           /*  
     {
       label: t('NFT'),
       href: `${nftsBaseUrl}`,
