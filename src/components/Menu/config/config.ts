@@ -161,7 +161,7 @@ const config: (
         */
         {
           label: t('Docs'),
-          href: 'https://https://magikdotfinance.gitbook.io/docs/',
+          href: 'https://magikdotfinance.gitbook.io/docs/',
           type: DropdownMenuItemType.EXTERNAL_LINK,
         },
       ],

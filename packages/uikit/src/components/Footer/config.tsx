@@ -53,7 +53,7 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Documentation",
-        href: "https://https://magikdotfinance.gitbook.io/docs/",
+        href: "https://magikdotfinance.gitbook.io/docs/",
       },
       {
         label: "Bug Bounty",

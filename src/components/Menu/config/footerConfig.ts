@@ -53,7 +53,7 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
       },
       {
         label: t('Documentation'),
-        href: 'https://https://magikdotfinance.gitbook.io/docs/',
+        href: 'https://magikdotfinance.gitbook.io/docs/',
       },
       {
         label: t('Bug Bounty'),
