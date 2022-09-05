@@ -70,7 +70,7 @@ const config: (
     },
     {
       label: t('Earn'),
-      href: '/farms',
+      href: '/',
       icon: EarnIcon,
       fillIcon: EarnFillIcon,
       supportChainIds: [ChainId.MAINNET],
@@ -90,7 +90,7 @@ const config: (
    
    {
       label: t('Games'),
-      href: '/games',
+      href: '/',
       icon: TrophyIcon,
       fillIcon: TrophyFillIcon,
       supportChainIds: [ChainId.MAINNET],
