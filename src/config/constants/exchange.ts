@@ -10,7 +10,7 @@ export const ROUTER_ADDRESS = {
 
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
-  [ChainId.MAINNET]: [bscTokens.mim, bscTokens.wbnb, bscTokens.magik, bscTokens.usdc],
+  [ChainId.MAINNET]: [bscTokens.mim, bscTokens.wbnb, bscTokens.magik, bscTokens.usdc, bscTokens.mshare],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
 }
 
