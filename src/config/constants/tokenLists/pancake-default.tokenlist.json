@@ -27,6 +27,14 @@
       "logoURI": "https://i.ibb.co/5MTTjnX/MSHARE.png"
     },
     {
+      "name": "Grape Finance",
+      "symbol": "GRAPE",
+      "address": "0x7dd7eaf5872e260f35dc60a54e0f25193128c765",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://github.com/grapefi/front-end/blob/main/src/assets/img/grape.png?raw=true"
+    },
+    {
       "name": "USD Coin",
       "symbol": "USDC",
       "address": "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
