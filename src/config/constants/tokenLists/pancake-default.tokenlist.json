@@ -35,6 +35,78 @@
       "logoURI": "https://github.com/grapefi/front-end/blob/main/src/assets/img/grape.png?raw=true"
     },
     {
+      "name": "Wrapped Ether",
+      "symbol": "WETH",
+      "address": "0x74b23882a30290451A17c44f4F05243b6b58C76d",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://github.com/Layer3Org/spiritswap-tokens-list-icon/blob/master/token-list/images/0x74b23882a30290451a17c44f4f05243b6b58c76d.png?raw=true"
+    },
+    {
+      "name": "Wrapped Bitcoin",
+      "symbol": "WBTC",
+      "address": "0x321162Cd933E2Be498Cd2267a90534A804051b11",
+      "chainId": 250,
+      "decimals": 8,
+      "logoURI": "https://github.com/Layer3Org/spiritswap-tokens-list-icon/blob/master/token-list/images/0x321162cd933e2be498cd2267a90534a804051b11.png?raw=true"
+    },
+    {
+      "name": "Maker: Dai Stablecoin",
+      "symbol": "DAI",
+      "address": "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://github.com/Layer3Org/spiritswap-tokens-list-icon/blob/master/token-list/images/0x8d11ec38a3eb5e956b052f67da8bdc9bef8abf3e.png?raw=true"
+    },
+    {
+      "name": "Oath Token",
+      "symbol": "OATH",
+      "address": "0x21Ada0D2aC28C3A5Fa3cD2eE30882dA8812279B6",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://ftmscan.com/token/images/bytemasons_32.png?raw=true"
+    },
+    {
+      "name": "Spirit Swap Token",
+      "symbol": "SPIRIT",
+      "address": "0x5Cc61A78F164885776AA610fb0FE1257df78E59B",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://ftmscan.com/token/images/spiritswap_32.png?raw=true"
+    },
+    {
+      "name": "BeethovenxToken",
+      "symbol": "BEETS",
+      "address": "0xF24Bcf4d1e507740041C9cFd2DddB29585aDCe1e",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://ftmscan.com/token/images/beethovenx_32.png?raw=true"
+    },
+    {
+      "name": "BeethovenxToken",
+      "symbol": "BEETS",
+      "address": "0xF24Bcf4d1e507740041C9cFd2DddB29585aDCe1e",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://ftmscan.com/token/images/beethovenx_32.png?raw=true"
+    },
+    {
+      "name": "Liquid Driver",
+      "symbol": "LQDR",
+      "address": "0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://ftmscan.com/token/images/liquiddriver_32.png?raw=true"
+    },
+    {
+      "name": "Spooky Token",
+      "symbol": "BOO",
+      "address": "0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://ftmscan.com/token/images/spookyswap-boo_32.png?raw=true"
+    },
+    {
       "name": "USD Coin",
       "symbol": "USDC",
       "address": "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
