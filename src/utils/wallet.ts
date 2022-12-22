@@ -46,8 +46,8 @@ export const setupNetwork = async (chainId?: number, externalProvider?: External
                 chainId: `0x${chainId.toString(16)}`,
                 chainName: NETWORK_CONFIG[chainId].name,
                 nativeCurrency: {
-                  name: 'BNB',
-                  symbol: 'bnb',
+                  name: 'FTM',
+                  symbol: 'ftm',
                   decimals: 18,
                 },
                 rpcUrls: NETWORK_CONFIG[chainId].rpcUrls,
